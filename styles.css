@@ -518,5 +518,35 @@ background-size: 100%;
 .services__card button {
     color: white;
     padding: 14px 24px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: black;
+    font-size: 1rem;
 }
+
+.services__card button:hover {
+    cursor: pointer;
+}
+
+.services__card:hover {
+    transform: scale(1.075);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1300px) {
+    .services__wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .services__wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Footer CSS */
 
